@@ -1,0 +1,141 @@
+<mvc:View
+    controllerName="luxasia.controller.calllist"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Page>
+        <customHeader>
+            <Bar>
+                <contentLeft>
+                    <Button
+                        icon="sap-icon://arrow-left"
+                        size="1rem"
+                        color="#000000"
+                        press="onNavBack"
+                        class="navbutton"
+                    />
+                    <Text text="CONTACT LIST" />
+                </contentLeft>
+                <contentRight>
+                    <MultiComboBox
+                        change="handleChange"
+                        selectionChange="handleSelectionChange"
+                        width="190px"
+                        id="selectbycustomer"
+                        placeholder="Filter by Customer"
+                        showSecondaryValues="true"
+                        class="multicombobox"
+                    />
+                    <MultiComboBox
+                        change="handleChange"
+                        selectionChange="handleSelectionChange"
+                        width="190px"
+                        id="selectbycampaign"
+                        placeholder="Filter by Campaign"
+                        showSecondaryValues="true"
+                        class="multicombobox"
+                    >
+                        <core:Item
+                            key="Special Price"
+                            text="Special Price"
+                        />
+
+                        <core:Item
+                            key="Cart"
+                            text="Cart"
+                        />
+
+                        <core:Item
+                            key="MOM"
+                            text="MOM"
+                        />
+                    </MultiComboBox>
+                    <MultiComboBox
+                        change="handleChange"
+                        selectionChange="handleSelectionChange"
+                        width="190px"
+                        id="selectbytier"
+                        placeholder="Filter by Tier"
+                        showSecondaryValues="true"
+                        class="multicombobox"
+                    />
+                </contentRight>
+            </Bar>
+        </customHeader>
+
+        <content>
+            <Table
+                id="customerTable"
+                items="{/Customers}"
+                class="myCustomMargin"
+            >
+                <columns>
+                    <Column>
+                        <Text
+                            text="Customers"
+                            class="titleText"
+                        />
+                    </Column>
+                    <Column>
+                        <Text
+                            text="Campaign"
+                            class="titleText"
+                        />
+                    </Column>
+                    <Column>
+                        <Text
+                            text="Tier"
+                            class="titleText"
+                        />
+                    </Column>
+                    <Column>
+                        <Text
+                            text="Phone#"
+                            class="titleText"
+                        />
+                    </Column>
+                    <Column>
+                        <Text
+                            text="Date"
+                            class="titleText"
+                        />
+                    </Column>
+                    <Column>
+                        <Text
+                            text="Attempts"
+                            class="titleText"
+                        />
+                    </Column>
+                    <Column>
+                        <Text
+                            text="Notes"
+                            class="titleText"
+                        />
+                    </Column>
+                    <Column>
+                        <Text
+                            text="Status"
+                            class="titleText"
+                        />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <Text text="{Name}" />
+                            <Text text="{Campaign}" />
+                            <Text text="{Tier}" />
+                            <Text text="{PhoneNumber}" />
+                            <Text text="{Date}" />
+                            <Text text="{Attempts}" />
+                            <Text text="{Notes}" />
+                            <Text text="{Status}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

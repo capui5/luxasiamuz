@@ -1,0 +1,41 @@
+{
+  "salesData": [
+    {
+      "SaleId": "1",
+      "Products": [
+        {
+          "Name": "Product A",
+          "ProductId": "A123",
+          "Price": "50.00 USD",
+          "Total": "100.00 USD",
+          "Customer": "Customer 1",
+          "Status": "Pending",
+          "Reference": "Ref 1"
+        },
+        {
+          "Name": "Product B",
+          "ProductId": "B456",
+          "Price": "30.00 USD",
+          "Total": "90.00 USD",
+          "Customer": "Customer 2",
+          "Status": "Completed",
+          "Reference": "Ref 2"
+        }
+      ]
+    },
+    {
+      "SaleId": "2",
+      "Products": [
+        {
+          "Name": "Product C",
+          "ProductId": "C789",
+          "Price": "40.00 USD",
+          "Total": "120.00 USD",
+          "Customer": "Customer 3",
+          "Status": "Abandoned",
+          "Reference": "Ref 3"
+        }
+      ]
+    }
+  ]
+}

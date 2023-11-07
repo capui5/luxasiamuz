@@ -1,0 +1,92 @@
+_schema-version: "3.2"
+ID: luxasiasingapore
+version: 0.0.1
+modules:
+- name: luxasiasingapore-destination-content
+  type: com.sap.application.content
+  requires:
+  - name: luxasiasingapore-destination-service
+    parameters:
+      content-target: true
+  - name: luxasiasingapore_html_repo_host
+    parameters:
+      service-key:
+        name: luxasiasingapore_html_repo_host-key
+  - name: uaa_luxasiasingapore
+    parameters:
+      service-key:
+        name: uaa_luxasiasingapore-key
+  parameters:
+    content:
+      instance:
+        destinations:
+        - Name: luxasiarouter_luxasiasingapore_html_repo_host
+          ServiceInstanceName: luxasiasingapore-html5-app-host-service
+          ServiceKeyName: luxasiasingapore_html_repo_host-key
+          sap.cloud.service: luxasiarouter
+        - Authentication: OAuth2UserTokenExchange
+          Name: luxasiarouter_uaa_luxasiasingapore
+          ServiceInstanceName: luxasiasingapore-xsuaa-service
+          ServiceKeyName: uaa_luxasiasingapore-key
+          sap.cloud.service: luxasiarouter
+        existing_destinations_policy: ignore
+  build-parameters:
+    no-source: true
+- name: luxasiasingapore-app-content
+  type: com.sap.application.content
+  path: .
+  requires:
+  - name: luxasiasingapore_html_repo_host
+    parameters:
+      content-target: true
+  build-parameters:
+    build-result: resources
+    requires:
+    - artifacts:
+      - luxasia.zip
+      name: luxasia
+      target-path: resources/
+- name: luxasia
+  type: html5
+  path: luxasia
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+resources:
+- name: luxasiasingapore-destination-service
+  type: org.cloudfoundry.managed-service
+  parameters:
+    config:
+      HTML5Runtime_enabled: true
+      init_data:
+        instance:
+          destinations:
+          - Authentication: NoAuthentication
+            Name: ui5
+            ProxyType: Internet
+            Type: HTTP
+            URL: https://ui5.sap.com
+          existing_destinations_policy: update
+      version: 1.0.0
+    service: destination
+    service-name: luxasiasingapore-destination-service
+    service-plan: lite
+- name: luxasiasingapore_html_repo_host
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-name: luxasiasingapore-html5-app-host-service
+    service-plan: app-host
+- name: uaa_luxasiasingapore
+  type: org.cloudfoundry.managed-service
+  parameters:
+    path: ./xs-security.json
+    service: xsuaa
+    service-name: luxasiasingapore-xsuaa-service
+    service-plan: application
+parameters:
+  deploy_mode: html5-repo

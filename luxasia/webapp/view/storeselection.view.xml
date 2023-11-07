@@ -1,0 +1,43 @@
+<mvc:View
+    controllerName="luxasia.controller.storeselection"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <VBox
+        class="sapUiLargeMargin"
+        alignItems="Center"
+    >
+        <Text
+            text="WELCOME TO THE CE APP"
+            level="H4"
+            class="welcome"
+        />
+        <Text
+            text="PLEASE SELECT YOUR STORE"
+            level="text"
+            class="select"
+        />
+
+        <ComboBox
+            id="storeSelect"
+            items="{storeModel>/}"
+            class="wide-select"
+            placeholder="Store Name,Address"
+            style="margin-bottom: 1rem;"
+            
+        >
+            <core:Item
+                key="{storeModel>name}"
+                text="{storeModel>name},{storeModel>address}"
+            />
+        </ComboBox>
+        <Button
+            text="Next"
+            press="onNextPagePress"
+            class="button1"
+            icon="sap-icon://arrow-right"
+        />
+    </VBox>
+</mvc:View>

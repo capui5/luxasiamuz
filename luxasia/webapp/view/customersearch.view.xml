@@ -1,0 +1,72 @@
+<mvc:View
+    controllerName="luxasia.controller.customersearch"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Page>
+        <customHeader>
+      <Bar class="custom-bar">
+    <contentLeft>
+        <Button
+            icon="sap-icon://arrow-left"
+            size="1rem"
+            press="onNavBack"
+            class="navbutton"
+        />
+        <Text text="CUSTOMER SEARCH" class="customersearch" />
+    </contentLeft>
+    <contentRight>
+        <Button
+            text="CREATE NEW PROFILE"
+            press="onNextPage"
+            class="wide-button"
+        />
+    </contentRight>
+</Bar>
+
+
+        </customHeader>
+
+        <content>
+            <FlexBox
+               class="flex-spacing"
+            >
+                <FlexBox alignItems="Center">
+                    <Input
+                        id="mobileInput"
+                        placeholder="Mobile Number"
+                       
+                    />
+                </FlexBox>
+                <FlexBox alignItems="Center">
+                    <Input
+                        id="emailInput"
+                        placeholder="Email Address"
+                       
+                    />
+                </FlexBox>
+                <FlexBox alignItems="Center">
+                    <Input
+                        id="nameInput"
+                        placeholder="Name"
+                       
+                    />
+                </FlexBox>
+                <FlexBox alignItems="Center">
+                    <Input
+                        id="surnameInput"
+                        placeholder="Surname"
+                       
+                    />
+                </FlexBox>
+                <Button
+                    text="Search"
+                    press="onSearch"
+                    class="wide-button1"
+                />
+            </FlexBox>
+        </content>
+    </Page>
+</mvc:View>

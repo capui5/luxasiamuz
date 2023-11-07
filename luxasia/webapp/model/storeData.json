@@ -1,0 +1,14 @@
+[
+  {
+      "name": "Store A",
+      "address": "123 A St"
+  },
+  {
+      "name": "Store B",
+      "address": "456 B St"
+  },
+  {
+      "name": "Store C",
+      "address": "789 C St"
+  }
+]

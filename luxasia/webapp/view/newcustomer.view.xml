@@ -1,0 +1,158 @@
+<mvc:View
+    controllerName="luxasia.controller.newcustomer"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <VBox
+        class="sapUiSmallMargin"
+        alignItems="Center"
+        justifyContent="Center"
+    >
+        <Title
+            text="NEW CUSTOMER PROFILE"
+            level="H2"
+            class="Newcustomer"
+        />
+        <Text
+            text="Please enter details"
+            level="H4"
+            class="pleaseenter"
+        />
+    </VBox>
+
+    <!--First Hbox-->
+    <HBox
+        alignItems="Center"
+        class="flexContainer"
+        justifyContent="SpaceBetween"
+    >
+        <!-- First equal part -->
+        <VBox width="10%">
+            <Input
+                placeholder="Title"
+                class="myInput"
+                id="titleInput"
+                required="true"
+            />
+        </VBox>
+
+        <!-- Second equal part -->
+        <VBox width="44.5%">
+            <Input
+                placeholder="Name"
+                class="myInput"
+                id="nameInput"
+                required="true"
+            />
+        </VBox>
+
+        <!-- Third equal part -->
+        <VBox width="44.5%">
+            <Input
+                placeholder="Surname"
+                class="myInput"
+                id="surnameInput"
+                required="true"
+            />
+        </VBox>
+    </HBox>
+    <!--Second Hbox-->
+    <HBox
+        alignItems="Center"
+        class="flexContainer"
+        justifyContent="SpaceBetween"
+    >
+        <!-- First equal part -->
+        <VBox width="39.5%">
+            <Input
+                placeholder="Email Address"
+                width="100%"
+                class="myInput"
+                id="emailInput"
+                required="true"
+            />
+        </VBox>
+
+        <!-- Second equal part -->
+        <VBox width="20%">
+            <ComboBox
+                width="100%"
+                class="myInput"
+                placeholder="Country code"
+                id="countryCodeComboBox"
+                required="true"
+            >
+                <items>
+                    <core:Item
+                        key="US"
+                        text="United States"
+                    />
+                    <core:Item
+                        key="CA"
+                        text="Canada"
+                    />
+                    <core:Item
+                        key="IND"
+                        text="India"
+                    />
+                </items>
+            </ComboBox>
+        </VBox>
+
+        <!-- Third equal part -->
+        <VBox width="39.5%">
+            <Input
+                placeholder="Mobile Number"
+                width="100%"
+                class="myInput"
+                id="mobileNumberInput"
+                required="true"
+            />
+        </VBox>
+    </HBox>
+    <!--Thrid Hbox-->
+    <HBox
+        alignItems="Center"
+        class="flexContainer"
+        justifyContent="SpaceBetween"
+    >
+        <!-- First equal part -->
+        <VBox width="49.5%">
+            <DatePicker
+                placeholder="Date of Birth"
+                width="100%"
+                class="myInput"
+                id="dateOfBirthDatePicker"
+                required="true"
+            />
+        </VBox>
+
+        <!-- Second equal part -->
+        <VBox width="49.5%">
+            <Input
+                placeholder="Customer Address"
+                width="100%"
+                class="myInput"
+                id="customerAddressInput"
+            />
+        </VBox>
+    </HBox>
+
+    <Text
+        text="By Submitting this form, you agree that the Luxasia Group of Companies may collect, use, and process your personal data as provided to send you marketing information on upcoming events and promotions in accordance with the PDPA and our data protection policy available on our website! The information you provided will also be used for research and customer relationship management purposes. You may unsubscribe at any time."
+        class="pleaseenter1"
+    />
+
+    <HBox
+        alignItems="Center"
+        justifyContent="Center"
+    >
+        <Button
+            text="Create New Profile"
+            press="onCreateProfile"
+            class="wide-create"
+        />
+    </HBox>
+</mvc:View>

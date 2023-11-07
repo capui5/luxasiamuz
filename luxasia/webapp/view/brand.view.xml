@@ -1,0 +1,73 @@
+<mvc:View
+    controllerName="luxasia.controller.brand"
+   xmlns:l="sap.ui.layout"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    models="myData"
+>
+    <SplitContainer id="splitContainer">
+        <masterPages>
+            <Page
+                id="master"
+                title="MY BRANDS"
+            >
+                <content />
+             
+            <Button text="Login" width="100%" press="onButtonPress" class="Login" />
+       
+            </Page>
+        </masterPages>
+        <detailPages>
+            <Page
+                id="detail"
+                title="ADD NEW BRANDS"
+            >
+                <content>
+                    <List
+                        headerLevel="H2"
+                        items="{
+                    path: 'myData>/ProductCollection',
+                    sorter: {
+                        path: 'Name'
+                    }
+                }"
+                        id="productList"
+                    >
+                        <items>
+                            <CustomListItem
+                                class="customItemSpacing"
+                                press="onListItemPress"
+                           
+                            >
+                                <HBox
+                                    alignItems="Center"
+                                    class="flexContainer"
+                                    justifyContent="SpaceBetween"
+                                >
+                                    <HBox width="90%">
+                                        <VBox class="centered" >
+                                            <Title
+                                                text="{myData>Name}"
+                                                class="custom-title"
+                                            />
+                                        </VBox>
+                                    </HBox>
+ 
+                                    <HBox width="10%">
+                                        <VBox class="centered" >
+                                            <Button
+                                                icon="sap-icon://add"
+                                                press="onAddButtonPress"
+                                            />
+                                        </VBox>
+                                    </HBox>
+                                </HBox>
+                            </CustomListItem>
+                        </items>
+                    </List>
+                </content>
+            </Page>
+        </detailPages>
+    </SplitContainer>
+</mvc:View>
