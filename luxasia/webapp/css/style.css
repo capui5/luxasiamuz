@@ -317,46 +317,49 @@ div#application-luxasia-display-component---customersearch--surnameInput-content
 }
 
 .wide-select {
-    width: 300px;
+    width: 350px;
 }
 
 .wide-select::placeholder {
     color: #000;
+    font-size: bold;
 }
 
 div#application-luxasia-display-component---storeselection--storeSelect-content {
-    height: 30px;
+    height: 35px;
     border-radius: 30px;
     background-color: rgb(8, 168, 168);
     border: 1px solid #fff;
+  
 }
 
-.button1 .sapMBtnInner {
+.next .sapMBtnInner {
 
     background-color: rgb(8, 168, 168);
     border-radius: 30px;
-    height: 30px;
-    padding: 2px;
-    width: 300px;
+    height: 35px;
+    padding: 3px;
+    width: 350px;
     margin: 20px;
 }
 
-.button1 .sapMBtnInner:hover {
+.next .sapMBtnInner:hover {
 
     background-color: rgb(8, 78, 88);
     background-color: rgb(8, 78, 88);
 }
 
-.button1 .sapMBtnContent {
+.next .sapMBtnContent {
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.button1 .sapMBtnIcon {
-    color: white;
+span#__button0-img {
+    color: #fff;
 }
+
 
 /*Storeselection*/
 /*Brand*/
@@ -374,10 +377,6 @@ div#application-luxasia-display-component---brand--detail-intHeader-BarPH {
 
 span#application-luxasia-display-component---brand--detail-title-inner {
     color: white;
-}
-
-div#application-luxasia-display-component---brand--splitContainer-Master {
-    width: 50%;
 }
 
 .Login .sapMBtnInner {
@@ -405,7 +404,12 @@ div#application-luxasia-display-component---brand--splitContainer-Master {
 .Login .sapMBtnContent {
     color: white;
 }
-
+/* div#application-luxasia-display-component---brand--splitContainer-Master {
+    width: 50%;
+} */
+div#container-luxasia---brand--splitContainer-Master {
+    width: 50%;
+}
 /*Brand*/
 /*Newcustomer*/
 .Newcustomer {
@@ -414,7 +418,7 @@ div#application-luxasia-display-component---brand--splitContainer-Master {
     text-align: center;
     color: #000;
     font-size: larger;
-    font-weight: lighter;
+    font-weight: light;
     word-spacing: 5px;
 }
 
@@ -444,8 +448,8 @@ div#application-luxasia-display-component---brand--splitContainer-Master {
     color: #fff;
     background-color: rgb(8, 168, 168);
     border-radius: 50px;
-    height: 50px;
-    width: 500px;
+    height: 40px;
+    width: 600px;
     align-items: center;
 }
 
@@ -461,54 +465,65 @@ div#application-luxasia-display-component---brand--splitContainer-Master {
 
 .flexContainer {
     padding-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
-
-div#application-luxasia-display-component---newcustomer--titleInput-content {
+/* .myInput.sapMInput {
     height: 35px;
+  
+    border: 2px solid white;
+} */
+/* .myInput.sapMInputBase{
+    border-radius: 30px;
+    height: 35px;
+    border: 2px solid white;
+} */
+
+
+.myInput div#application-luxasia-display-component---newcustomer--titleInput-content {
+    height: 40px;
     border-radius: 30px;
     border: 2px solid white;
 }
 
-div#application-luxasia-display-component---newcustomer--nameInput-content {
-    height: 35px;
+.myInput div#application-luxasia-display-component---newcustomer--nameInput-content {
+    height: 40px;
     border-radius: 30px;
     border: 2px solid white;
 }
 
-div#application-luxasia-display-component---newcustomer--surnameInput-content {
-    height: 35px;
+.myInput div#application-luxasia-display-component---newcustomer--surnameInput-content {
+    height: 40px;
     border-radius: 30px;
     border: 2px solid white;
 }
 
-div#application-luxasia-display-component---newcustomer--emailInput-content {
-    height: 35px;
+.myInput div#application-luxasia-display-component---newcustomer--emailInput-content {
+    height: 40px;
     border-radius: 30px;
     border: 2px solid white;
 }
 
-div#application-luxasia-display-component---newcustomer--countryCodeComboBox-content {
-    height: 35px;
+.myInput div#application-luxasia-display-component---newcustomer--countryCodeComboBox-content {
+    height: 40px;
     border-radius: 30px;
     border: 2px solid white;
 }
 
-div#application-luxasia-display-component---newcustomer--mobileNumberInput-content {
-    height: 35px;
+.myInput div#application-luxasia-display-component---newcustomer--mobileNumberInput-content {
+    height: 40px;
     border-radius: 30px;
     border: 2px solid white;
 }
 
-div#application-luxasia-display-component---newcustomer--dateOfBirthDatePicker-content {
-    height: 35px;
+.myInput div#application-luxasia-display-component---newcustomer--dateOfBirthDatePicker-content {
+    height: 40px;
     border-radius: 30px;
     border: 2px solid white;
 }
 
-div#application-luxasia-display-component---newcustomer--customerAddressInput-content {
-    height: 35px;
+.myInput div#application-luxasia-display-component---newcustomer--customerAddressInput-content {
+    height: 40px;
     border-radius: 30px;
     border: 2px solid white;
 }
@@ -529,11 +544,11 @@ div#application-luxasia-display-component---newcustomer--customerAddressInput-co
 /*Newcustomer*/
 
 /*Call list*/
-/* div#__bar1 {
+.calllist div#__bar1 {
     background-color: #454545;
     height: 3rem;
     padding-top: 10px;
-} */
+}
 .myCustomMargin {
     margin-top: 20px;
 }
@@ -547,20 +562,20 @@ div#application-luxasia-display-component---newcustomer--customerAddressInput-co
 }
 /*Call list*/
 /*Current campaigns*/
-.mycustombar div#__bar1 {
+/* .mycustombar div#__bar2 {
     background-color: #000;
-}
+} */
 #customerTable{
     padding-top: 0px;
 }
 /*Current campaigns*/
 /*Slaes Completion*/
-.salebar header.sapMPageHeader  {
+.salebar div#_bar3 {
     background-color: #000;
     margin-left:  0px;
     padding-right: 0px;
 }
-.mysubheader div#__bar1 {
+.mysubheader div#__bar4 {
     background-color: mintcream;
 }
 .myTitleButton {
@@ -574,26 +589,20 @@ div#application-luxasia-display-component---newcustomer--customerAddressInput-co
 .myText{
     color: #000;
 }
-.myTitleButton span#__button1-inner {
-    color: #fff;
-} 
-.myTitleButton span#__button2-inner {
-    color: #fff;
-}  
-.mytranscations span#__button3-inner {
+
+.myTitleButton span#__button1-content {
+    color: white;
+}
+.myTitleButton span#__button2-content {
+    color: white;
+}
+.mytranscations span#__button3-content {
     color: #fff;
     background-color: rgb(58, 177, 177);
     border-radius: 30px;
 }
-.completetranscation span#__button4-inner {
+.completetranscation span#__button4-content {
     color: #000;
-    border-color: #fff;
-    border-radius: 30px;
-}
-.completetranscation span#__button4-inner:hover {
-    color: #000;
-    border-color: #fff;
-    border-radius: 30px;
 }
 div#__page0-intHeader-BarRight {
     padding: 0px;
@@ -601,4 +610,37 @@ div#__page0-intHeader-BarRight {
 .myBlackText {
     color: black;
 }
+button#__button5-__list0-application-luxasia-display-component---salescompletion--salesTable-0-0 {
+    padding-left: 10px;
+    padding-top: 0px;
+}
+button#__button5-__list0-application-luxasia-display-component---salescompletion--salesTable-0-1 {
+    padding-left: 10px;
+    padding-top: 0px;
+}
+button#__button5-__list0-application-luxasia-display-component---salescompletion--salesTable-1-0 {
+    padding-left: 10px;
+    padding-top: 0px;
+}
+button#__button5-__list0-application-luxasia-display-component---salescompletion--salesTable-1-1 {
+    padding-left: 10px;
+    padding-top: 0px;
+}
+span#__button5-__list0-application-luxasia-display-component---salescompletion--salesTable-0-0-inner {
+    border: none;
+}
+span#__button5-__list0-application-luxasia-display-component---salescompletion--salesTable-0-1-inner {
+    border: none;
+}
+span#__button5-__list0-application-luxasia-display-component---salescompletion--salesTable-1-0-inner {
+    border: none;
+}
+span#__button5-__list0-application-luxasia-display-component---salescompletion--salesTable-1-1-inner {
+    border: none;
+}
+.sapMIBar .sapMBtn .sapMBtnInner.sapMBtnDefault, .sapMIBar .sapMBtn .sapMBtnInner.sapMBtnDefault .sapUiIcon, .sapUxAPObjectPageHeaderIdentifierActions .sapMBtn .sapMBtnInner.sapMBtnDefault, .sapUxAPObjectPageHeaderIdentifierActions .sapMBtn .sapMBtnInner.sapMBtnDefault .sapUiIcon {
+    color: #ffffff;
+    background-color: transparent;
+}
+
 /*Slaes Completion*/

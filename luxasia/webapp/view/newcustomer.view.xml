@@ -10,9 +10,8 @@
         alignItems="Center"
         justifyContent="Center"
     >
-        <Title
+        <Text
             text="NEW CUSTOMER PROFILE"
-            level="H2"
             class="Newcustomer"
         />
         <Text

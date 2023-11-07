@@ -36,7 +36,7 @@
         <Button
             text="Next"
             press="onNextPagePress"
-            class="button1"
+            class="next"
             icon="sap-icon://arrow-right"
         />
     </VBox>
