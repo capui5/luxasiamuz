@@ -144,6 +144,20 @@
                   "target": [
                     "salescompletion"
                   ]
+                },
+                {
+                  "name": "newcustdetail",
+                  "pattern": "newcustdetail",
+                  "target": [
+                    "newcustdetail"
+                  ]
+                },
+                {
+                  "name": "transaction",
+                  "pattern": "transaction",
+                  "target": [
+                    "transaction"
+                  ]
                 }
               ],
               "targets": {
@@ -202,6 +216,20 @@
                   "clearControlAggregation": false,
                   "viewId": "salescompletion",
                   "viewName": "salescompletion"
+                },
+                "newcustdetail":{
+                  "viewType": "XML",
+                  "transition": "slide",
+                  "clearControlAggregation": false,
+                  "viewId": "newcustdetail",
+                  "viewName": "newcustdetail"
+                },
+                "transaction":{
+                  "viewType": "XML",
+                  "transition": "slide",
+                  "clearControlAggregation": false,
+                  "viewId": "transaction",
+                  "viewName": "transaction"
                 }
         
               }

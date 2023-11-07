@@ -23,7 +23,7 @@
 
         <content>
             <Table
-                id="customerTable"
+                id="campaignTable"
                 items="{/Customers}"
                 class="myCustomMargin"
             >

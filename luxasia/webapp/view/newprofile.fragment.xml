@@ -1,0 +1,58 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+
+    <Dialog
+        id="cashcarrydialog"
+        title="CREATE NEW PROFILE"
+		showHeader="false"
+    >
+     <VBox xmlns="sap.m" class="sapUiContentPadding" alignItems="Center">
+            <HBox alignItems="Center">
+                <!-- Label centered -->
+                <Label class="fragmentext1" text="CREATE NEW PROFILE" />
+                <!-- Spacer to pus10h the button to the end -->
+                <HBox  width="100%" />
+                <!-- Button with "decline" icon at the end -->
+                <Button
+                    id="helloDialogButton"
+                    icon="sap-icon://decline"
+                    press=".onCloseFrag"
+                    class="sapUiSmallMarginEnd"
+                />
+            </HBox>
+        </VBox>
+	<HBox class= "fragtile">
+        <GenericTile
+            class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout newprofile"
+            header="USE QR CODE TO CREATE PROFILE"
+            subheader="Subtitle"
+            press="onQrPress"
+            frameType="TwoByHalf"
+        >
+            <TileContent
+                unit="EUR"
+                footer="Current Quarter"
+            >
+                <ImageContent src="sap-icon://qr-code" class="tile-iconcreate"/>
+            </TileContent>
+        </GenericTile>
+        
+        <GenericTile
+            class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout newprofile"
+            header="ENTER PROFILE MANUALLY"
+            subheader="Subtitle"
+            press="createprofile"
+            frameType="TwoByHalf"
+        >
+            <TileContent
+                unit="EUR"
+                footer="Current Quarter"
+            >
+                <ImageContent src="sap-icon://document-text" class="tile-icon"/>
+            </TileContent>
+        </GenericTile>
+        </HBox>
+    </Dialog>
+</core:FragmentDefinition>

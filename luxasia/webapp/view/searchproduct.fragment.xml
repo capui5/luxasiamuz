@@ -1,0 +1,64 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<TableSelectDialog
+		id="myDialog"
+		noDataText="No Products Found"
+		title="SEARCH FOR PRODUCT"
+		titleAlignment="Center"
+		search=".handleSearch"
+		confirm=".handleClose"
+		cancel=".handleClose"
+		 items="{storeModel>/}">
+		<ColumnListItem  vAlign="Middle">
+			<cells>
+				<ObjectIdentifier text="{storeModel>articlecode}" />
+				<ObjectIdentifier text="{storeModel>barcode}" />
+				<ObjectIdentifier text="{storeModel>product}" />
+				<ObjectNumber
+					number="{storeModel>price}"
+					 />
+								<StepInput
+						id="CurrentValue"
+						value="{storeModel>quantity}"
+						width="100px"
+						class= "step_input"
+
+						change="currentChangeHandler"/>
+			</cells>
+		</ColumnListItem>
+		<columns>
+			<Column >
+				<header>
+					<Text text="ARTICLE CODE (EAN/UPC)" />
+				</header>
+			</Column>
+			<Column >
+				<header>
+					<Text text="BAR CODE" />
+				</header>
+			</Column>
+			<Column
+				
+				demandPopin="true"
+				>
+				<header>
+					<Text text="PRODUCT" />
+				</header>
+			</Column>
+			<Column
+				
+				demandPopin="true"
+				hAlign="Center">
+				<header>
+					<Text text="PRICE" />
+				</header>
+			</Column>
+			<Column hAlign="End">
+				<header>
+					<Text text="QUANTITY" />
+				</header>
+			</Column>
+		</columns>
+	</TableSelectDialog>
+</core:FragmentDefinition>

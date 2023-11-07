@@ -195,8 +195,31 @@ div#__bar0 {
     height: 3rem;
     padding-top: 10px;
 }
-
-div#application-luxasia-display-component---customersearch--emailInput-content {
+div#container-luxasia---customersearch--emailInput-content {
+    height: 40px;
+    border-radius: 30px;
+    width: 200px;
+    border: 1px solid white;
+}
+div#container-luxasia---customersearch--mobileInput-content {
+    height: 40px;
+    border-radius: 30px;
+    width: 200px;
+    border: 1px solid white;
+}
+div#container-luxasia---customersearch--nameInput-content {
+    height: 40px;
+    border-radius: 30px;
+    width: 200px;
+    border: 1px solid white;
+}
+div#container-luxasia---customersearch--surnameInput-content {
+    height: 40px;
+    border-radius: 30px;
+    width: 200px;
+    border: 1px solid white;
+}
+/* div#application-luxasia-display-component---customersearch--emailInput-content {
     height: 40px;
     border-radius: 30px;
     width: 200px;
@@ -223,7 +246,7 @@ div#application-luxasia-display-component---customersearch--surnameInput-content
     width: 200px;
     border: 1px solid white;
 
-}
+} */
 
 .flex-spacing {
     padding-top: 2.5rem;
@@ -325,14 +348,19 @@ div#application-luxasia-display-component---customersearch--surnameInput-content
     font-size: bold;
 }
 
-div#application-luxasia-display-component---storeselection--storeSelect-content {
+/* div#application-luxasia-display-component---storeselection--storeSelect-content {
     height: 35px;
     border-radius: 30px;
     background-color: rgb(8, 168, 168);
     border: 1px solid #fff;
   
+} */
+div#container-luxasia---storeselection--storeSelect-content {
+    height: 35px;
+    border-radius: 30px;
+    background-color: rgb(8, 168, 168);
+    border: 1px solid #fff;
 }
-
 .next .sapMBtnInner {
 
     background-color: rgb(8, 168, 168);
@@ -479,54 +507,100 @@ div#container-luxasia---brand--splitContainer-Master {
     border: 2px solid white;
 } */
 
-
-.myInput div#application-luxasia-display-component---newcustomer--titleInput-content {
+div#container-luxasia---newcustomer--titleInput-content {
     height: 40px;
     border-radius: 30px;
     border: 2px solid white;
 }
 
-.myInput div#application-luxasia-display-component---newcustomer--nameInput-content {
+div#container-luxasia---newcustomer--nameInput-content {
     height: 40px;
     border-radius: 30px;
     border: 2px solid white;
 }
 
-.myInput div#application-luxasia-display-component---newcustomer--surnameInput-content {
+div#container-luxasia---newcustomer--surnameInput-content {
     height: 40px;
     border-radius: 30px;
     border: 2px solid white;
 }
 
-.myInput div#application-luxasia-display-component---newcustomer--emailInput-content {
+div#container-luxasia---newcustomer--emailInput-content {
     height: 40px;
     border-radius: 30px;
     border: 2px solid white;
 }
 
-.myInput div#application-luxasia-display-component---newcustomer--countryCodeComboBox-content {
+div#container-luxasia---newcustomer--countryCodeComboBox-content {
     height: 40px;
     border-radius: 30px;
     border: 2px solid white;
 }
 
-.myInput div#application-luxasia-display-component---newcustomer--mobileNumberInput-content {
+div#container-luxasia---newcustomer--mobileNumberInput-content{
     height: 40px;
     border-radius: 30px;
     border: 2px solid white;
 }
 
-.myInput div#application-luxasia-display-component---newcustomer--dateOfBirthDatePicker-content {
+div#container-luxasia---newcustomer--dateOfBirthDatePicker-content{
     height: 40px;
     border-radius: 30px;
     border: 2px solid white;
 }
 
-.myInput div#application-luxasia-display-component---newcustomer--customerAddressInput-content {
+div#container-luxasia---newcustomer--customerAddressInput-content {
     height: 40px;
     border-radius: 30px;
     border: 2px solid white;
 }
+ /* div#application-luxasia-display-component---newcustomer--titleInput-content {
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+
+ div#application-luxasia-display-component---newcustomer--nameInput-content {
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+
+div#application-luxasia-display-component---newcustomer--surnameInput-content {
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+
+div#application-luxasia-display-component---newcustomer--emailInput-content {
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+
+div#application-luxasia-display-component---newcustomer--countryCodeComboBox-content {
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+
+div#application-luxasia-display-component---newcustomer--mobileNumberInput-content {
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+
+div#application-luxasia-display-component---newcustomer--dateOfBirthDatePicker-content {
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+
+div#application-luxasia-display-component---newcustomer--customerAddressInput-content {
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid white;
+} */
 
 /* Mobile (up to 767px) */
 /* @media screen and (max-width: 767px) {
@@ -544,7 +618,7 @@ div#container-luxasia---brand--splitContainer-Master {
 /*Newcustomer*/
 
 /*Call list*/
-.calllist div#__bar1 {
+div#__bar1 {
     background-color: #454545;
     height: 3rem;
     padding-top: 10px;
@@ -560,23 +634,28 @@ div#container-luxasia---brand--splitContainer-Master {
 .multicombobox .sapMComboBoxInner {
     border-radius: 30px;
 }
+.customerTable{
+    padding-top: 0px;
+}
 /*Call list*/
 /*Current campaigns*/
-/* .mycustombar div#__bar2 {
-    background-color: #000;
-} */
-#customerTable{
+div#__bar2 {
+    background-color: #454545;
+}
+div#container-luxasia---reviewallcampaigns--campaignTable {
     padding-top: 0px;
 }
 /*Current campaigns*/
 /*Slaes Completion*/
-.salebar div#_bar3 {
-    background-color: #000;
-    margin-left:  0px;
-    padding-right: 0px;
+div#__bar3 {
+    background-color: #454545;
 }
-.mysubheader div#__bar4 {
-    background-color: mintcream;
+div#__page3-intHeader {
+    background-color: #454545;
+}
+div#__bar4 {
+    background-color: #f4f3ef;
+    height: 45px;
 }
 .myTitleButton {
     background: none;
@@ -596,12 +675,15 @@ div#container-luxasia---brand--splitContainer-Master {
 .myTitleButton span#__button2-content {
     color: white;
 }
-.mytranscations span#__button3-content {
+.mytranscations span#__button12-content {
     color: #fff;
     background-color: rgb(58, 177, 177);
     border-radius: 30px;
+    height: 23px;
+    padding: 2px;
+    width: 100%;
 }
-.completetranscation span#__button4-content {
+.completetranscation span#__button13-content {
     color: #000;
 }
 div#__page0-intHeader-BarRight {
@@ -610,7 +692,35 @@ div#__page0-intHeader-BarRight {
 .myBlackText {
     color: black;
 }
-button#__button5-__list0-application-luxasia-display-component---salescompletion--salesTable-0-0 {
+button#__button14-__list3-container-luxasia---salescompletion--salesTable-0-0 {
+    padding-left: 10px;
+    padding-top: 0px;
+}
+button#__button14-__list3-container-luxasia---salescompletion--salesTable-0-1 {
+    padding-left: 10px;
+    padding-top: 0px;
+}
+button#__button14-__list3-container-luxasia---salescompletion--salesTable-1-0 {
+    padding-left: 10px;
+    padding-top: 0px;
+}
+button#__button14-__list3-container-luxasia---salescompletion--salesTable-1-1 {
+    padding-left: 10px;
+    padding-top: 0px;
+}
+span#__button14-__list3-container-luxasia---salescompletion--salesTable-0-0-inner {
+    border: none;
+}
+span#__button14-__list3-container-luxasia---salescompletion--salesTable-0-1-inner {
+    border: none;
+}
+span#__button14-__list3-container-luxasia---salescompletion--salesTable-1-0-inner {
+    border: none;
+}
+span#__button14-__list3-container-luxasia---salescompletion--salesTable-1-1-inner {
+    border: none;
+}
+/* button#__button5-__list0-application-luxasia-display-component---salescompletion--salesTable-0-0 {
     padding-left: 10px;
     padding-top: 0px;
 }
@@ -625,8 +735,8 @@ button#__button5-__list0-application-luxasia-display-component---salescompletion
 button#__button5-__list0-application-luxasia-display-component---salescompletion--salesTable-1-1 {
     padding-left: 10px;
     padding-top: 0px;
-}
-span#__button5-__list0-application-luxasia-display-component---salescompletion--salesTable-0-0-inner {
+} */
+/* span#__button5-__list0-application-luxasia-display-component---salescompletion--salesTable-0-0-inner {
     border: none;
 }
 span#__button5-__list0-application-luxasia-display-component---salescompletion--salesTable-0-1-inner {
@@ -637,10 +747,77 @@ span#__button5-__list0-application-luxasia-display-component---salescompletion--
 }
 span#__button5-__list0-application-luxasia-display-component---salescompletion--salesTable-1-1-inner {
     border: none;
-}
+} */
 .sapMIBar .sapMBtn .sapMBtnInner.sapMBtnDefault, .sapMIBar .sapMBtn .sapMBtnInner.sapMBtnDefault .sapUiIcon, .sapUxAPObjectPageHeaderIdentifierActions .sapMBtn .sapMBtnInner.sapMBtnDefault, .sapUxAPObjectPageHeaderIdentifierActions .sapMBtn .sapMBtnInner.sapMBtnDefault .sapUiIcon {
     color: #ffffff;
     background-color: transparent;
 }
 
 /*Slaes Completion*/
+.fragmentext1{
+    font-size: larger;
+    font-weight :lighter;
+    text-align: center;
+}
+.fragtile{
+margin-left: 80px;
+margin-right: 80px;
+margin-bottom: 30px
+}
+.products .sapMFlexItem{
+
+}
+
+/* pos transaction page */
+
+.transtoolbar{
+ background-color: #000 !important;
+}
+.transtext.sapMText{
+    color : white !important;
+    padding: 10px;
+}
+.sapMTileCntContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#application-luxasia-display-component---transaction--otbSubheader{
+    background:#000;
+}
+
+.newcustdetailtitle.sapMText {
+    color: white;
+    font-size: large;
+}
+.newcustdetailtoolbar.sapMIBar {
+    background: black;
+}
+
+
+#cashcarrydialog{
+    text-align: center;
+}
+.newprofile .sapMImageContentImageIcon.sapUiIcon::before {
+    font-size: 1.75rem;
+    background-color: rgb(8, 78, 88);
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #fff;
+}
+span#__tile5-title {
+    text-align: center;
+}
+span#__tile6-title {
+    text-align: center;
+}
+span#__tile7-title {
+    text-align: center;
+}
+span#__tile8-title {
+    text-align: center;
+}

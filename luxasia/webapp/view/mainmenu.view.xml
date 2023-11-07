@@ -67,7 +67,7 @@
         <GenericTile
             class="tileLayout tile-2"
             header="CREATE NEW PROFILE"
-            press="createprofile"
+            press="onOpenDialog"
         >
             <TileContent>
                 <ImageContent
@@ -80,7 +80,7 @@
         <GenericTile
             class="tileLayout tile-3"
             header="CASH AND CARRY"
-            press="cash"
+            press="onOpenFrag"
         >
             <TileContent>
                 <ImageContent
@@ -93,7 +93,7 @@
         <GenericTile
             class="tileLayout tile-4"
             header="TODAY'S TRANSACTION"
-            press="transaction"
+           press="transaction"
         >
             <TileContent>
                 <ImageContent

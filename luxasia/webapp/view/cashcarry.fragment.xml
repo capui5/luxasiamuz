@@ -1,0 +1,63 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Dialog
+        id="cashcarrydialog"
+        title="CREATE NEW PROFILE"
+        showHeader="false"
+    >
+        <VBox
+            xmlns="sap.m"
+            class="sapUiContentPadding"
+            alignItems="Center"
+        >
+            <HBox alignItems="Center">
+                <Label
+                    class="fragmentext1"
+                    text="CASH &amp; CARRY"
+                />
+
+                <HBox width="100%" />
+
+                <Button
+                    id="helloDialogButton"
+                    icon="sap-icon://decline"
+                    press=".onCloseFrag"
+                    class="sapUiSmallMarginEnd"
+                />
+            </HBox>
+        </VBox>
+        <HBox class="fragtile">
+            <GenericTile
+                class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout products newprofile"
+                header="SCAN PRODUCTS"
+                subheader="Subtitle"
+                press="press"
+                frameType="TwoByHalf"
+            >
+                <TileContent
+                    unit="EUR"
+                    footer="Current Quarter"
+                >
+                    <ImageContent src="sap-icon://bar-code" />
+                </TileContent>
+            </GenericTile>
+
+            <GenericTile
+                class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout newprofile"
+                header="SEARCH FOR PRODUCTS"
+                subheader="Subtitle"
+                press="onSearchProduct"
+                frameType="TwoByHalf"
+            >
+                <TileContent
+                    unit="EUR"
+                    footer="Current Quarter"
+                >
+                    <ImageContent src="sap-icon://search" />
+                </TileContent>
+            </GenericTile>
+        </HBox>
+    </Dialog>
+</core:FragmentDefinition>

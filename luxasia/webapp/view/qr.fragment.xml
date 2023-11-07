@@ -1,0 +1,15 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+<Dialog showHeader="false">
+
+
+  <HBox width="800px" alignItems="Center" justifyContent="Center" display="Flex">
+ 
+    <VBox alignItems="Center" justifyContent="Center" display="Flex">
+      <Image src="/images/qrcode.png" id="qrcode" width="250px" height="250px" /> <!-- ID "qrcode" for the Image control -->
+    </VBox>
+  </HBox>
+</Dialog>
+</core:FragmentDefinition>
